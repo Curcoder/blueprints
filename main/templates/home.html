@@ -1,5 +1,9 @@
 {% extends 'index.html' %}
 
 {% block content %}
-	<h1>Home Page</h1>
+	<h1>Home Page of</h1>
+	{% for user in user_list %}
+		{{ user.name }}
+	{% endfor %}
+
 {% endblock %}
